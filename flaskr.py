@@ -74,7 +74,7 @@ def login():
             flash('You were logged in')
     return render_template('login.html', error=error)
 
-@app.route('/logut')
+@app.route('/logout')
 def logout():
     session.pop('logged_in', None)
     flash('You were logged out')
